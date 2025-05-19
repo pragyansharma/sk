@@ -91,19 +91,19 @@ const Projects = () => {
 
   const eventImages = [
     {
-      url: "/1.jpg",
+      url: `${import.meta.env.BASE_URL}1.jpg`,
       caption: "Education Fair - Student Engagement"
     },
     {
-      url: "/2.jpg",
+      url: `${import.meta.env.BASE_URL}2.jpg`,
       caption: "University Partnership Meeting"
     },
     {
-      url: "/3.jpg",
+      url: `${import.meta.env.BASE_URL}3.jpg`,
       caption: "Student Counseling Session"
     },
     {
-      url: "/4.jpg",
+      url: `${import.meta.env.BASE_URL}4.jpg`,
       caption: "International Education Workshop"
     }
   ];
@@ -161,7 +161,7 @@ Bhasha Tech Inc. is a startup focused on building a language learning mobile app
 • Analyzed feature usage to drive data-backed product decisions
 • Optimized ad placements and evaluated performance via A/B testing
       `,
-      imageUrl: '/project1.jpg'
+      imageUrl: `${import.meta.env.BASE_URL}project1.jpg`
     },
     {
       id: 2,
@@ -219,7 +219,7 @@ To empower students with access to global education opportunities by organizing 
       title: 'International University Partnerships',
       description: 'Strategic partnership development with universities in the US and India.',
       type: 'image',
-      imageUrl: '/5.jpg',
+      imageUrl: `${import.meta.env.BASE_URL}5.jpg`,
       achievements: [
         'Partnerships with multiple US universities',
         'Streamlined admission pipelines',
@@ -302,7 +302,7 @@ To expand student placement opportunities and streamline admissions by establish
               <div className="relative">
               <div className="h-56 w-full">
                 <img
-                  src="/5.jpg"
+                  src={`${import.meta.env.BASE_URL}5.jpg`}
                   alt="Project Image"
                   className="w-full h-full object-cover"
                 />
